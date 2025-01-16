@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid" id="cont">
+                <img class="me-2" src="assets/logo.svg" alt="" width="30" height="30">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Landings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="d-flex gx-1">
+                    <div class="dropdown"  id="notification">
+                        <button class="btn icon rounded-circle"data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="notificationPoint"></span>
+                            <ion-icon name="notifications-outline" ></ion-icon>
+
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="dropdown " id="user">
+                        <button class="btn rounded-circle"data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="notificationPoint"></span>
+                            <img src="assets/avatar-1.jpg">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                            <li>
+                                <div class="imgUserMenu me-2" >
+                                    <img src="assets/avatar-1.jpg" alt="" width="100%" height="100%" class="rounded-circle" >
+                    
+                                </div>
+                                <div class="infoUserMenu">
+                                    <p>Annette Black</p>
+                                    <a class="linkEmail" href="#">annette@geeksui.com</a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li>
+                                <ion-icon name="person"></ion-icon>
+                                <a class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li>
+                                <ion-icon name="star"></ion-icon>
+                                <a class="dropdown-item" href="#">Subscription</a>
+                            </li>
+                            <li>
+                                <ion-icon name="settings"></ion-icon>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <ion-icon name="power"></ion-icon>
+                                <a class="dropdown-item" href="#"> Sing Out</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                <button class="navbar-toggler" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+
+            </div>
+            </div>
+          </nav>
+          
+    </header>
+
+    <main  >
+        <section class="hero">
+            <div class="container-md">
+                <div class="row px-4 px-lg-5">
+                    <div class="col-12 col-md-6 d-flex py-4 " >
+                        <div class="my-auto">
+                          <h1 class="text-white font-weight-bold">Welcome Web Students!</h1>
+                          <p class="col-md-8 text-white text-opacity-50 ">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+                          <button class="btn firstBtn" type="button">Browse Courses</button>
+                          <button class="btn secondBtn" type="button">Are you Instructor?</button>
+                        </div>
+                      </div>
+                    <div class="col-12 col-md-6  d-flex align-items-end justify-content-center px-0" id="imageHero">
+                        <img src="assets/hero-img.png" alt="" class="img-fluid" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="InfoSchool bg-white ">
+            <div class="container-md">
+                <div class="row py-4 px-4 px-lg-5">
+                    <div class="d-flex col-12 col-md-4 mb-3 mb-md-0 px-0">
+                        <div class="iconInfo me-3 fs-5 ">
+                            <ion-icon name="videocam" class="rounded-circle"></ion-icon>
+                        </div>
+                        <div class="textInfo">
+                            <h6>30,000 online courses</h6>
+                            <p class="text-secondary">Enjoy a variety of fresh topics</p>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 col-md-4 mb-3 mb-md-0 px-0">
+                        <div class="iconInfo me-3 fs-5">
+                            <ion-icon name="people" class="rounded-circle" ></ion-icon>
+                        </div>
+                        <div class="textInfo">
+                            <h6>Expert instruction</h6>
+                            <p class="text-secondary">Find the right instructor for you</p>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 col-md-4 px-0">
+                        <div class="iconInfo me-3 fs-5">
+                            <ion-icon name="time" class="rounded-circle "></ion-icon>
+                        </div>
+                        <div class="textInfo">
+                            <h6>Lifetime access</h6>
+                            <p class="text-secondary">Learn on your schedule</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+            <section class="course mt-5" id="recommended">
+                <div class="container ">
+                    <h4 class="px-md-5 px-2">Recommended to you</h4>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active px-2 px-md-4 px-lg-5">
+                            <div class="row mt-3  ">
+
+                                <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                    <div class="card" >
+                                        <img src="assets/course-graphql.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h3 class="card-title">GraphQL: introduction to graphQL for beginners</h3>
+                                          <div class="d-flex flex-wrap" >
+                                            <div class="d-flex me-2">
+                                                <ion-icon name="time" class="me-1"></ion-icon>
+                                                <span>2h 40m</span>
+                                            </div>
+                                            <div class="d-flex  ">
+                                                <ion-icon name="podium" class="me-1"></ion-icon>
+                                                <span>advance</span>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex align-items-center flex-wrap">
+                                            <div class="d-flex star ">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <p class="m-0">2,5</p>
+                                            </div>
+                                            <span class="text-secondary">(1,500)</span>
+                                          </div>
+                                          <div class="cardPrice">
+                                            <span>$500</span>
+                                            <del class="text-secondary">$600</del>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="imgCardFooter me-2">
+                                                    <img src="assets/avatar-5.jpg" alt="" class="rounded-circle">
+                                                </div>
+                                                <span>Brooklyn Simmons</span>
+                                            </div>
+                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                        </div>
+                                     </div>
+                                </div>
+                                    <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                        <div class="card" >
+                                            <img src="assets/course-javascript.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">A Complete Beginner's Guide to JavaScript</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex   me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>4h 10m</span>
+                                                </div>
+                                                <div class="d-flex   ">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>advance</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">5,5</p>
+                                                </div>
+                                                <span class="text-secondary">(7,500)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$700</span>
+                                                <del class="text-secondary">$850</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-1.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Jenny Wilson</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-md-block">
+                                        <div class="card" >
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">Beginner's Node.js, Express & MongoDB Development</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>2h 00m</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>Intermediate</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">4,0</p>
+                                                </div>
+                                                <span class="text-secondary">(15,700)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$800</span>
+                                                <del class="text-secondary">$959</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-6.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Sina Ray</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-lg-block">
+                                        <div class="card" >
+                                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>1h 00m</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>Begginer</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                    <p class="m-0">4,5</p>
+                                                </div>
+                                                <span class="text-secondary">(7,500)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$130</span>
+                                                <del class="text-secondary">$220</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-7.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Sobo Rikhan</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                    </div>
+
+
+                            </div>
+                          </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden ">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+        
+
+            </section>
+            <section class="course mt-5" id="mostPopular">
+                <div class="container ">
+                    <h4 class="px-md-5 px-2">Most Popular</h4>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active px-2 px-md-4 px-lg-5">
+                            <div class="row mt-3  ">
+
+                                <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                    <div class="card" >
+                                        <img src="assets/course-html.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h3 class="card-title">HTML Full Course-Build a Website Tutorial</h3>
+                                          <div class="d-flex flex-wrap" >
+                                            <div class="d-flex me-2">
+                                                <ion-icon name="time" class="me-1"></ion-icon>
+                                                <span>3h 16m</span>
+                                            </div>
+                                            <div class="d-flex  ">
+                                                <ion-icon name="podium" class="me-1"></ion-icon>
+                                                <span>Beginner</span>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex align-items-center flex-wrap">
+                                            <div class="d-flex star ">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <p class="m-0">3,0</p>
+                                            </div>
+                                            <span class="text-secondary">(1,600)</span>
+                                          </div>
+                                          <div class="cardPrice">
+                                            <span>$550</span>
+                                            <del class="text-secondary">$700</del>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="imgCardFooter me-2">
+                                                    <img src="assets/avatar-4.jpg" alt="" class="rounded-circle">
+                                                </div>
+                                                <span>Miston Wilson</span>
+                                            </div>
+                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                        </div>
+                                     </div>
+                                </div>
+
+                                <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                        <div class="card" >
+                                            <img src="assets/course-javascript.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">A Complete Beginner's Guide to JavaScript</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex   me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>4h 10m</span>
+                                                </div>
+                                                <div class="d-flex   ">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>advance</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">5,5</p>
+                                                </div>
+                                                <span class="text-secondary">(7,500)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$700</span>
+                                                <del class="text-secondary">$850</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-1.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Jenny Wilson</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                </div>
+
+                                <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-md-block">
+                                        <div class="card" >
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">Beginner's Node.js, Express & MongoDB Development</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>2h 00m</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>Intermediate</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">4,0</p>
+                                                </div>
+                                                <span class="text-secondary">(15,700)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$800</span>
+                                                <del class="text-secondary">$959</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-6.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Sina Ray</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                </div>
+                                <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-lg-block">
+                                    <div class="card" >
+                                        <img src="assets/course-react.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body  ">
+                                          <h3 class="card-title">How to easily create a website with React</h3>
+                                          <div class="d-flex flex-wrap" >
+                                            <div class="d-flex me-2">
+                                                <ion-icon name="time" class="me-1"></ion-icon>
+                                                <span>3h 55m</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <ion-icon name="podium" class="me-1"></ion-icon>
+                                                <span>Advance</span>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex align-items-center flex-wrap">
+                                            <div class="d-flex star ">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <p class="m-0">4,5</p>
+                                            </div>
+                                            <span class="text-secondary">(1,500)</span>
+                                          </div>
+                                          <div class="cardPrice">
+                                            <span>$600</span>
+                                            <del class="text-secondary">$750</del>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="imgCardFooter me-2">
+                                                    <img src="assets/avatar-7.jpg" alt="" class="rounded-circle">
+                                                </div>
+                                                <span>Sobo Rikhan</span>
+                                            </div>
+                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                        </div>
+                                     </div>
+                                </div> 
+
+
+
+                            </div>
+                          </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden ">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+        
+
+            </section>
+            <section class="course mt-5" id="trending">
+                <div class="container ">
+                    <h4 class="px-md-5 px-2">Trending</h4>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active px-2 px-md-4 px-lg-5">
+                            <div class="row mt-3  ">
+
+                                <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                    <div class="card" >
+                                        <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h3 class="card-title">Revolutionize how you build the web</h3>
+                                          <div class="d-flex flex-wrap" >
+                                            <div class="d-flex me-2">
+                                                <ion-icon name="time" class="me-1"></ion-icon>
+                                                <span>1h 46m</span>
+                                            </div>
+                                            <div class="d-flex  ">
+                                                <ion-icon name="podium" class="me-1"></ion-icon>
+                                                <span>Intermediate</span>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex align-items-center flex-wrap">
+                                            <div class="d-flex star ">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <p class="m-0">2,0</p>
+                                            </div>
+                                            <span class="text-secondary">(16,500)</span>
+                                          </div>
+                                          <div class="cardPrice">
+                                            <span>$800</span>
+                                            <del class="text-secondary">$850</del>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="imgCardFooter me-2">
+                                                    <img src="assets/avatar-4.jpg" alt="" class="rounded-circle">
+                                                </div>
+                                                <span>Miston Wilson</span>
+                                            </div>
+                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="col-6  col-md-4 col-lg-3  mb-5">
+                                    <div class="card" >
+                                        <img src="assets/course-html.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h3 class="card-title">HTML Full Course-Build a Website Tutorial</h3>
+                                          <div class="d-flex flex-wrap" >
+                                            <div class="d-flex me-2">
+                                                <ion-icon name="time" class="me-1"></ion-icon>
+                                                <span>3h 16m</span>
+                                            </div>
+                                            <div class="d-flex  ">
+                                                <ion-icon name="podium" class="me-1"></ion-icon>
+                                                <span>Beginner</span>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex align-items-center flex-wrap">
+                                            <div class="d-flex star ">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <p class="m-0">3,0</p>
+                                            </div>
+                                            <span class="text-secondary">(1,600)</span>
+                                          </div>
+                                          <div class="cardPrice">
+                                            <span>$550</span>
+                                            <del class="text-secondary">$700</del>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="imgCardFooter me-2">
+                                                    <img src="assets/avatar-4.jpg" alt="" class="rounded-circle">
+                                                </div>
+                                                <span>Miston Wilson</span>
+                                            </div>
+                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                        </div>
+                                     </div>
+                                </div>
+
+
+                                    <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-md-block">
+                                        <div class="card" >
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">Beginner's Node.js, Express & MongoDB Development</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>2h 00m</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>Intermediate</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">4,0</p>
+                                                </div>
+                                                <span class="text-secondary">(15,700)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$800</span>
+                                                <del class="text-secondary">$959</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-6.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Sina Ray</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="col-6  col-md-4 col-lg-3  mb-5 d-none d-lg-block">
+                                        <div class="card" >
+                                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body  ">
+                                              <h3 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                                              <div class="d-flex flex-wrap" >
+                                                <div class="d-flex me-2">
+                                                    <ion-icon name="time" class="me-1"></ion-icon>
+                                                    <span>1h 00m</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <ion-icon name="podium" class="me-1"></ion-icon>
+                                                    <span>Begginer</span>
+                                                </div>
+                                              </div>
+                                              <div class="d-flex align-items-center flex-wrap">
+                                                <div class="d-flex star ">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <p class="m-0">2,5</p>
+                                                </div>
+                                                <span class="text-secondary">(1500)</span>
+                                              </div>
+                                              <div class="cardPrice">
+                                                <span>$500</span>
+                                                <del class="text-secondary">$600</del>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer py-2 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="imgCardFooter me-2">
+                                                        <img src="assets/avatar-5.jpg" alt="" class="rounded-circle">
+                                                    </div>
+                                                    <span>Brooklyn Simmons</span>
+                                                </div>
+                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                            </div>
+                                         </div>
+                                    </div>
+
+
+                            </div>
+                          </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden ">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+        
+
+            </section>
+    </main>
+
+    <footer>
+        <div class="container-md ">
+            <div class="row text-center py-1  px-5  border-top d-flex justify-content-between ">
+                <div class="col-12 col-md-6 text-md-start pt-2">
+                    <p class="m-0">@ 2022 Geeks. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-4 pt-md-2 ">
+                    <ul class="row p-0">
+                        <li class="col-3  p-0">Privacy</li>
+                        <li class="col-3  p-0">Terms</li>
+                        <li class="col-3  p-0">Feedback</li>
+                        <li class="col-3  p-0">Support</li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
