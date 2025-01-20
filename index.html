@@ -6,19 +6,20 @@
     <title>School</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="style-animation.css">
 
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid" id="cont">
-                <img class="me-2" src="assets/logo.svg" alt="" width="30" height="30">
+                <img class="me-2" src="assets/logo.svg" alt="" width="30" height="30" id="logo">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Browse
                             </a>
                             <ul class="dropdown-menu">
@@ -29,7 +30,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Landings
                             </a>
                             <ul class="dropdown-menu">
@@ -40,7 +41,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
                             </a>
                             <ul class="dropdown-menu">
@@ -51,7 +52,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Accounts
                             </a>
                             <ul class="dropdown-menu">
@@ -67,11 +68,11 @@
 
                 <div class="d-flex gx-1">
                     <div class="dropdown"  id="notification">
-                        <button class="btn icon rounded-circle"data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn  rounded-circle"data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="notificationPoint"></span>
                             <ion-icon name="notifications-outline" ></ion-icon>
-
                         </button>
+
                         <ul class="dropdown-menu dropdown-menu-end ">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -135,8 +136,8 @@
                         <div class="my-auto">
                           <h1 class="text-white font-weight-bold">Welcome Web Students!</h1>
                           <p class="col-md-8 text-white text-opacity-50 ">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
-                          <button class="btn firstBtn" type="button">Browse Courses</button>
-                          <button class="btn secondBtn" type="button">Are you Instructor?</button>
+                          <button class="firstBtn hvr-bob " type="button">Browse Courses</button>
+                          <button class="secondBtn hvr-bob " type="button">Are you Instructor?</button>
                         </div>
                       </div>
                     <div class="col-12 col-md-6  d-flex align-items-end justify-content-center px-0" id="imageHero">
@@ -228,7 +229,12 @@
                                                 </div>
                                                 <span>Brooklyn Simmons</span>
                                             </div>
-                                            <ion-icon name="bookmark" class=""></ion-icon>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                    <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                  </svg>
+
                                         </div>
                                      </div>
                                 </div>
@@ -270,7 +276,12 @@
                                                     </div>
                                                     <span>Jenny Wilson</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                      </svg>
+
                                             </div>
                                          </div>
                                     </div>
@@ -311,7 +322,12 @@
                                                     </div>
                                                     <span>Sina Ray</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                      </svg>
+
                                             </div>
                                          </div>
                                     </div>
@@ -353,7 +369,13 @@
                                                     </div>
                                                     <span>Sobo Rikhan</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                                <div >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                      </svg>
+                                            
+                                                </div>
                                             </div>
                                          </div>
                                     </div>
@@ -423,7 +445,11 @@
                                                 </div>
                                                 <span>Miston Wilson</span>
                                             </div>
-                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                              </svg>
+                                    
                                         </div>
                                      </div>
                                 </div>
@@ -466,7 +492,11 @@
                                                     </div>
                                                     <span>Jenny Wilson</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                    <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                  </svg>
+                                        
                                             </div>
                                          </div>
                                 </div>
@@ -508,7 +538,11 @@
                                                     </div>
                                                     <span>Sina Ray</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                    <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                  </svg>
+                                        
                                             </div>
                                          </div>
                                 </div>
@@ -550,7 +584,12 @@
                                                 </div>
                                                 <span>Sobo Rikhan</span>
                                             </div>
-                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                              </svg>
+                                    
+                                            </div>
                                         </div>
                                      </div>
                                 </div> 
@@ -621,7 +660,11 @@
                                                 </div>
                                                 <span>Miston Wilson</span>
                                             </div>
-                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                              </svg>
+                                    
                                         </div>
                                      </div>
                                 </div>
@@ -663,7 +706,11 @@
                                                 </div>
                                                 <span>Miston Wilson</span>
                                             </div>
-                                            <ion-icon name="bookmark" class=""></ion-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                              </svg>
+                                    
                                         </div>
                                      </div>
                                 </div>
@@ -706,7 +753,11 @@
                                                     </div>
                                                     <span>Sina Ray</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                    <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                  </svg>
+                                        
                                             </div>
                                          </div>
                                     </div>
@@ -748,7 +799,11 @@
                                                     </div>
                                                     <span>Brooklyn Simmons</span>
                                                 </div>
-                                                <ion-icon name="bookmark" class=""></ion-icon>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                    <path class="n1" d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                  </svg>
+                                        
                                             </div>
                                          </div>
                                     </div>

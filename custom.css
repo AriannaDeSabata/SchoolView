@@ -11,8 +11,21 @@
     border: none;
     margin-right: 10px;
 }
-.btn .icon{
-    position: relative;
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar>.container-fluid{
+    flex-wrap: wrap-reverse;
+
+}
+
+#notification button{
+    background-color: #f1f1f1;
+}
+#notification ion-icon{
+    height: 100%;
+    vertical-align: middle;
 }
 .notificationPoint{
     width: 10px;
@@ -81,9 +94,7 @@
 ion-icon{
     font-size: 25px;
 }
-.icon{
-    background-color:#F5F4F9 ;
-}
+
 
 .hero{
     background-color: #7550FF;
@@ -94,19 +105,21 @@ ion-icon{
 .imageHero{
     object-fit: cover;
 }
-.hero .btn{
+.hero button{
     padding: 8px;
     border-radius: 2px;
     font-size: 0.8em;
+    border: none;
 
 }
-.secondBtn{
-    background-color: #fff;
-    color: #000;
-}
-.firstBtn{
+.hero button:nth-of-type(1){
     background-color: #14d89d;
     color: #fff;
+}
+
+.hero button:nth-of-type(2){
+    background-color: #ffffff;
+    color: #000;
 }
 
 
@@ -141,7 +154,16 @@ main, footer{
 .card{
     min-height: 300px;
     font-size: 95%;
+    transition: box-shadow 1s, transform 1s;
 }
+
+.card:hover{
+    box-shadow: 0 0 10px #a0a0a0a8;
+    transform: scale(1.1);
+}
+
+
+
 .card-title{
     font-size: 80%;
 }
@@ -175,12 +197,17 @@ span{
 .cardPrice del{
     font-size: 0.8em;
 }
-
+footer{
+    font-size: 0.8em;
+}
 .imgCardFooter{
     width: 25px;
     object-fit: cover;
 }
 
+.carousel-inner{
+    overflow: visible;
+}
 
 .carousel-control-prev,.carousel-control-next{
     width: 30px;
@@ -197,7 +224,43 @@ span{
 footer li{
     list-style: none;
 }
-footer{
+.card-footer{
     font-size: 0.8em;
+
+}
+
+
+
+svg{
+    width: 15px;
+
+}
+
+svg:hover .n1{
+    visibility: visible;
+}
+.n1{
+    visibility: hidden;
+}
+
+#logo, .iconInfo{
+    cursor: pointer;
+    transition: transform 3s;
+}
+
+#logo:hover, .iconInfo:hover{
+    transform: rotateY(360deg);
+
+}
+
+.textInfo{
+    transition: transform 1s, border-bottom ;
+}
+
+.iconInfo:hover ~ .textInfo{
+    transform:translateX(10px);
+    border-bottom: 1px solid #7650ff2c;
+
+
 
 }
